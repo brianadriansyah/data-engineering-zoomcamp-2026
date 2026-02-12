@@ -1,0 +1,23 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+*.parquet
+
+# Abaikan data database Postgres
+ny_taxi_postgres_data/
+
+# Abaikan environment virtual jika ada
+.venv/
+pipeline/.venv/
+__pycache__/
+
+# Abaikan file CSV besar
+*.csv
+pipeline/*.csv
