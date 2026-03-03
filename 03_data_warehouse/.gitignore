@@ -1,0 +1,18 @@
+# Python - Lingkungan Virtual dan Cache
+.venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Data - Hindari upload file besar ke GitHub
+data/*.parquet
+data/*.csv
+data/*.json
+
+# Database - File database lokal dan lock files
+*.db
+*.db.wal
+*.db.tmp
+
+# Credentials - Jika kamu membuat file .env untuk password
+.env
