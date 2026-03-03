@@ -1,0 +1,19 @@
+services:
+  kestra:
+    image: kestra/kestra:latest-full
+    user: "root"
+    command: server local
+    ports:
+      - "8080:8080"
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - ./data:/app/data
+    networks:
+      - kestra_net
+      - postgres_net
+
+networks:
+  kestra_net:
+  postgres_net:
+    external: true
+    name: docker_and_postgres_default

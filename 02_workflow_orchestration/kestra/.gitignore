@@ -1,0 +1,21 @@
+# Python-generated files
+# Python virtual environment
+.venv/
+
+# Kestra internal database and local data
+data/zoomcamp/*.db
+data/zoomcamp/*.log.db
+# Jika Anda ingin meng-ignore semua file CSV hasil download
+data/zoomcamp/*.csv
+
+# Python generated files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Temporary ingestion files (dari skrip Python kita)
+data_temp.csv.gz
+data_ingest_temp.csv.gz
