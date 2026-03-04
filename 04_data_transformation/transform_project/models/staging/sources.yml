@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: staging
+    database: my_data
+    schema: main
+    tables:
+      - name: raw_yellow_taxi
+        identifier: yellow_taxi_trips

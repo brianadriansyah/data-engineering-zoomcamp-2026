@@ -1,0 +1,28 @@
+
+target/
+dbt_packages/
+logs/
+
+# Database
+*.db
+*.db.wal
+
+# Data (Raw)
+*.parquet
+*.csv
+!seeds/*.csv
+
+# dbt
+target/
+dbt_packages/
+logs/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Kredensial & Config
+*.json
+profiles.yml
+.env
